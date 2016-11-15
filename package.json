@@ -4,7 +4,8 @@
   "description": "my static website template",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build-css": "node-sass --include-path src/scss --output-style compressed src/scss/style.scss src/css/style.css",
+    "watch-and-build-css": "npm run build-css -- -w"
   },
   "author": "jiska",
   "license": "ISC",
